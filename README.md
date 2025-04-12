@@ -1,78 +1,92 @@
-Assignment 2
+# 📘 Assignment 2 - Network Creation Project
 
-Follow these steps to set up the project in your local environment.
-
-### 📦 Prerequisites
-
-- Python 3.x
-- `pip`
-- `virtualenv` (optional but recommended)
-- Jupyter Notebook or VS Code with Jupyter extension
+This project includes Jupyter Notebook analysis and Python scripts for creating and working with a network from given data sources.
 
 ---
 
-## 📁 Clone the Repository
+## 🚀 Getting Started
+
+Follow the steps below to set up and run the project on your local machine.
+
+---
+
+### 🧱 Set Up Virtual Environment
+
+Create a virtual environment (only needs to be done once):
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-
-
-
---
-
-Set Up Virtual Environment
-
-
 python -m venv env
+```
 
+#### ✅ Activate the Environment
 
+- **Windows:**
+  ```bash
+  .\env\Scripts\activate
+  ```
 
-Activate the environment:
+- **Mac/Linux:**
+  ```bash
+  source env/bin/activate
+  ```
 
-Windows:
+---
 
-.\env\Scripts\activate
+### 📥 Install Required Packages
 
-Mac/Linux:
+After activating the environment, install the dependencies using:
 
-source env/bin/activate
-
-
-Install Required Packages
-
+```bash
 pip install -r requirements.txt
+```
 
+---
 
+## 🧪 Run the Notebook
 
-Run the Notebook
-Option 1: Launch Jupyter Notebook
+### 🔹 Option 1: Launch Jupyter Notebook
 
-On jupyter notebook
+```bash
+jupyter notebook
+```
 
-Then open your notebook file (assigment2.ipynb)
+Then open the notebook file:
 
+```
+assignment2.ipynb
+```
 
-Option 2: Open in VS Code
-Open the folder in VS Code.
+### 🔹 Option 2: Open in VS Code
 
-Open the .ipynb file.
+1. Open the project folder in **Visual Studio Code**
+2. Open `assignment2.ipynb`
+3. Run cells individually or click **"Run All"**
 
-Run cells individually or click “Run All.”
+---
 
+## 📁 Project Structure
 
-Project Structure
-
-
+```
 Project/
-├── env/                     # Virtual environment
-├── assignment2.ipynb
-├── Data for network creation (1).xlsx
-├── Data for network creation - Sheet1 (1).csv
-├── graph.py
-├── combine.py
-├── requirements.txt
-└── README.md
+├── env/                               # Virtual environment (excluded from version control)
+├── assignment2.ipynb                  # Main Jupyter notebook
+├── Data for network creation (1).xlsx # Original Excel data
+├── Data for network creation - Sheet1 (1).csv # Converted CSV data
+├── graph.py                           # Script for graph-related operations
+├── combine.py                         # Script for data combining/cleaning
+├── requirements.txt                   # List of Python dependencies
+└── README.md                          # Project instructions (this file)
+```
 
+> ⚠️ Make sure the `env/` folder is included in `.gitignore` to avoid pushing it to GitHub.
 
+---
+
+## ✅ Notes
+
+- You can generate or update `requirements.txt` using:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+
+- If you're using VS Code, ensure the Python interpreter is set to your virtual environment.
